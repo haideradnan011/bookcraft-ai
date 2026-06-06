@@ -1,0 +1,29 @@
+{
+  "name": "bookcraft-ai",
+  "version": "0.1.0",
+  "description": "Intelligent Book Builder",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.0"
+  },
+  "keywords": [
+    "book",
+    "ai",
+    "writing",
+    "arabic"
+  ],
+  "author": "Haider Adnan",
+  "license": "MIT"
+}
